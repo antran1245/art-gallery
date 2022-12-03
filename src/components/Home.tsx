@@ -1,11 +1,13 @@
 import React from 'react'
 import { Button, Col, Row } from "react-bootstrap";
+import { useNavigate } from 'react-router-dom';
 import facebook from '../assets/icon-facebook.svg'
 import instagram from '../assets/icon-instagram.svg'
 import twitter from '../assets/icon-twitter.svg'
 import '../sass/home.scss'
 
 export default function Home () {
+    const navigate = useNavigate()
     return(
         <>
             <Row id='top'>
@@ -21,7 +23,7 @@ export default function Home () {
                         <p>
                             The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit us and find out.
                         </p>
-                        <div className='button-group'>
+                        <div className='button-group' onClick={() => {navigate('location')}}>
                             <Button>Our Location</Button>
                             <span></span>
                         </div>
