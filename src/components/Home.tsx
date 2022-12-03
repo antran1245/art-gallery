@@ -38,13 +38,13 @@ export default function Home () {
                             <p>Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
                         </Col>
                         <Col xs={{order: 1}} md={{order: 2, span: 8}} lg={{offset: 1,span: 7}} className='image-container'>
-                            <img src={require('../assets/desktop/image-grid-1.jpg')} alt="grid 1" width={'100%'}/>
+                            <img src={require('../assets/desktop/image-grid-1.jpg')} alt="grid 1" className='grid-1'/>
                         </Col>
                     </Row>
                     <Row id="grid-bottom">
                         <Col>
                             <img src={require('../assets/desktop/image-grid-2.jpg')} alt="grid 2" className='row-2'/>
-                            <img src={require('../assets/desktop/image-grid-3.jpg')} alt="grid 3" width={'100%'}/>
+                            <img src={require('../assets/desktop/image-grid-3.jpg')} alt="grid 3" className='grid-3'/>
                             <div className='info'>
                                 <p className='title'>COME & BE INSPIRED</p>
                                 <p>We’re excited to welcome you to our gallery and see how our collections influence you.</p>

@@ -72,6 +72,9 @@
     & > div {
         padding: 0;
     }
+    .grid-1, .grid-3 {
+        width: 100%;
+    }
     .info {
         display: flex;
         flex-direction: column;
