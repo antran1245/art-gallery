@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import facebook from '../assets/icon-facebook.svg'
 import instagram from '../assets/icon-instagram.svg'
 import twitter from '../assets/icon-twitter.svg'
+import logo from '../assets/logo-light.svg'
 import '../sass/home.scss'
 
 export default function Home () {
@@ -54,8 +55,7 @@ export default function Home () {
             </Row>
             <Row id='footer'>
                 <Col md={3} lg={3} xl={2} className="title">
-                    <p>MODERN</p>
-                    <p>ART GALLERY</p>
+                    <img src={logo} alt="logo" />
                 </Col>
                 <Col md={6} lg={5} xl={8} className="info">
                     <p>The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>

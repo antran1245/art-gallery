@@ -1,0 +1,118 @@
+// Map
+#map {
+    position: relative;
+    img {
+        padding: 0;
+    }
+    .button-group {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        display: flex;
+        cursor: pointer;
+        height: 72px;
+        width: auto;
+        padding: 0;
+        button {
+            background-color: #151515;
+            text-transform: uppercase;
+            border: none;
+            padding: 24px 35px;
+            border-radius: 0;
+        }
+        span {
+            background: url('../assets/icon-arrow-left.svg') center center no-repeat;
+            background-color: #D5966C;
+            padding: 36px;
+            height: 100%;
+        }
+    }
+}
+
+// Location Address Street
+#location {
+    background-color: #151515;
+    padding: 104px 165px 128px 165px;
+    p {
+        margin: 0;
+        color: #FFFFFF;
+    }
+    .title {
+        font-family: 'Big Shoulders Display', normal;
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 70px;
+        text-transform: uppercase;
+    }
+    .address {
+        p {
+            font-family: 'Outfit', normal;
+            font-size: 22px;
+            line-height: 32px;
+            font-weight: 300;
+        }
+        .street {
+            color: #D5966C;
+            font-family: 'Big Shoulders Display', normal;
+            font-size: 36px;
+            line-height: 36px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        .city, .info {
+            margin-top: 32px;
+        }
+    }
+}
+
+// Tablet screen size
+@media only screen and (max-width: 992px) {
+    #map {
+        .button-group {
+            left: 5%;
+        }
+    }
+    #location {
+        padding: 88px 40px 80px 39px;
+        .title {
+            font-size: 55px;
+            line-height: 50px;
+        }
+        .address {
+            p {
+                font-size: 18px;
+                line-height: 28px;
+            }
+            .street {
+                font-size: 32px;
+                line-height: 32px;
+            }
+            .city, .info {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// Mobile screen size
+@media only screen and (max-width: 576px) {
+    #map {
+        .button-group {
+            left: 0;
+        }
+    }
+    #location {
+        padding: 48px 16px 56px 16px;
+        .title {
+            font-size: 50px;
+            line-height: 45px;
+            display: flex;
+            p {
+                margin-right: 10px;
+            }
+        }
+        .address {
+            margin-top: 48px;
+        }
+    }
+}
