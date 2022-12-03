@@ -141,6 +141,19 @@
     }
 }
 
+// large
+@media only screen and (max-width: 1200px) {
+    #top {
+        .image-container {
+            .image-hero {
+                background: url('../assets/tablet/image-hero.jpg') no-repeat;
+                background-size: contain;
+                width: 100%;
+            }
+        }
+    }
+}
+
 // Tablet
 @media only screen and (max-width: 992px) {
     #top {
@@ -148,11 +161,6 @@
         .image-container {
             .black-rect {
                 display: none;
-            }
-            .image-hero {
-                background: url('../assets/tablet/image-hero.jpg') no-repeat;
-                background-size: contain;
-                width: 100%;
             }
         }
         .title {
