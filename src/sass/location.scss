@@ -65,6 +65,28 @@
     }
 }
 
+// Footer
+#location-footer {
+    background-color: #D5966C;
+    color: #151515;
+    padding: 80px 165px;
+    .info {
+        font-family: 'Outfit', normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .icons {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        filter: invert(1);
+        img {
+            margin-left: 20px;
+        }
+    }
+}
+
 // Tablet screen size
 @media only screen and (max-width: 992px) {
     #map {
@@ -92,6 +114,9 @@
             }
         }
     }
+    #location-footer {
+        padding: 56px 40px;
+    }
 }
 
 // Mobile screen size
@@ -115,4 +140,18 @@
             margin-top: 48px;
         }
     }
+    #location-footer {
+        .info {
+            margin-top: 38px;
+        }
+        .icons {
+            justify-content: flex-start;
+            margin-top: 38px;
+            img {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+
 }
