@@ -1,0 +1,117 @@
+#top {
+    padding: 190px 164px 314px 165px;
+    position: relative;
+    p {
+        margin-bottom: 0;
+    }
+    .image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: -1;
+        padding: 0;
+        display: flex;
+        .black-rect, .image-hero {
+            height: 100%;
+            width: 33%;
+        }
+        .black-rect {
+            background-color: #151515;
+        }
+        .image-hero {
+            background: url('../assets/desktop/image-hero.jpg') no-repeat;
+            background-size: 80% 100%;
+        }
+    }
+    .title {
+        font-size: 96px;
+        font-weight: 900;
+        line-height: 88px;
+        color: white;
+        mix-blend-mode: difference;
+        text-transform: uppercase;
+        font-family: 'Big Shoulders Display', normal;
+    }
+    .info {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 32px;
+        font-family: 'Outfit', normal;
+        color: #444444;
+    }
+    .button-group {
+        display: flex;
+        margin-top: 64px;
+        width: 260px;
+        height: 72px;
+        button {
+            background-color: #151515;
+            text-transform: uppercase;
+            border: none;
+            padding: 24px 35px;
+            border-radius: 0;
+        }
+        span {
+            background: url('../assets/icon-arrow-right.svg') center center no-repeat;
+            background-color: #D5966C;
+            padding: 36px;
+            height: 100%;
+        }
+    }
+}
+
+// Tablet
+@media only screen and (max-width: 992px) {
+    #top {
+        padding: 145px 40px 145px 389px;
+        .image-container {
+            .black-rect {
+                display: none;
+            }
+            .image-hero {
+                background: url('../assets/tablet/image-hero.jpg') no-repeat;
+                background-size: contain;
+                width: 100%;
+            }
+        }
+        .title {
+            font-size: 70px;
+            line-height: 65px;
+        }
+        .info {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .info, .button-group {
+            margin-top: 48px;
+        }
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 576px) {
+    #top {
+        padding: 0 16px;
+        padding-top: 272px;
+        width: 100%;
+        position: initial;
+        display: flex;
+        .image-container {
+            .image-hero  {
+                background: url('../assets/mobile/image-hero.jpg') no-repeat;
+                background-size: 100%;
+            }
+        }
+        .info, .title {
+            padding-right: 0;
+            width: 100%;
+        }
+        .title {
+            font-size: 60px;
+            line-height: 55px;
+            color: #151515;
+            mix-blend-mode: normal;
+        }
+    }
+}
